@@ -3,3 +3,7 @@
 .idea/workspace.xml
 out/production/Project2/gui/GeneralGUIBuilding.class
 .idea/workspace.xml
+*.xml
+*.class
+*.xml
+.idea/workspace.xml
