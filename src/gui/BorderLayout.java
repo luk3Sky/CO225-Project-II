@@ -1,6 +1,7 @@
 package gui;
 
 import javax.swing.*;
+import javax.swing.border.EmptyBorder;
 import java.awt.*;
 
 public class BorderLayout extends JFrame {
@@ -19,6 +20,7 @@ public class BorderLayout extends JFrame {
 
     private void createView() {
         JPanel panel = new JPanel();
+        panel.setBorder(new EmptyBorder(10,10,10,10));
         panel.setLayout(new java.awt.BorderLayout());
         getContentPane().add(panel);
 
