@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="506053b3-1713-4537-b022-c86ed24bd2d0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/gui/BorderLayout.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/BorderLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/BorderLayout.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,8 +75,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/gui/BorderLayout.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+            <state relative-caret-position="286">
+              <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1833#1834#0" expanded="true" />
@@ -151,7 +151,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545568207304" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545568454542" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -258,7 +258,7 @@
       <workItem from="1545292007802" duration="1266000" />
       <workItem from="1545456514436" duration="593000" />
       <workItem from="1545459151735" duration="30000" />
-      <workItem from="1545481342517" duration="14761000" />
+      <workItem from="1545481342517" duration="15013000" />
     </task>
     <task id="LOCAL-00001" summary="JPanel &amp; some components added">
       <created>1545292683481</created>
@@ -288,11 +288,18 @@
       <option name="project" value="LOCAL" />
       <updated>1545553907591</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="border layout example">
+      <created>1545568350935</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1545568350935</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18976000" />
+    <option name="totallyTimeSpent" value="19228000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -339,7 +346,8 @@
     <MESSAGE value="basic GUI&#10;click me" />
     <MESSAGE value="textField example" />
     <MESSAGE value="text area example" />
-    <option name="LAST_COMMIT_MESSAGE" value="text area example" />
+    <MESSAGE value="border layout example" />
+    <option name="LAST_COMMIT_MESSAGE" value="border layout example" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/gui/TryTextFieldInput.java">
@@ -401,8 +409,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/BorderLayout.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+        <state relative-caret-position="286">
+          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1833#1834#0" expanded="true" />

@@ -1,10 +1,7 @@
 package gui;
 
 import javax.swing.*;
-import javax.swing.border.Border;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class BorderLayout extends JFrame {
     private JButton btnSubmit,btnClr;
@@ -15,7 +12,7 @@ public class BorderLayout extends JFrame {
         createView();
 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setSize(400,200);
+        setMinimumSize(new Dimension(400,200));
         setLocationRelativeTo(null);
         setResizable(true);
     }
