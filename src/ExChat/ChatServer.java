@@ -1,5 +1,7 @@
 package ExChat;
 
+import ExChat.network.NetworkServer;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -7,11 +9,16 @@ public class ChatServer extends JFrame {
 
     public static final String TITLE="Chat Server";
     private static ChatServer instance;
+    private NetworkServer server;
+
     private JTextPane console;
     private JList listUsers;
 
     public ChatServer(){
         createView();
+
+        server = new NetworkServer(1080);
+        server.startServer();
 
         setTitle(TITLE);
         setSize(500,400);
@@ -38,8 +45,10 @@ public class ChatServer extends JFrame {
         userScrollPane.setBorder(BorderFactory.createTitledBorder("Connected Users"));
         panel.add(userScrollPane, BorderLayout.EAST);
     }
-    public static ChatServer getInstance() {
 
+
+
+    public static ChatServer getInstance() {
         return instance;
     }
 
