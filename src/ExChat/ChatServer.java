@@ -35,6 +35,7 @@ public class ChatServer extends JFrame {
         listUsers = new JList();
         JScrollPane userScrollPane = new JScrollPane(listUsers);
         userScrollPane.setPreferredSize(new Dimension(200,0));
+        userScrollPane.setBorder(BorderFactory.createTitledBorder("Connected Users"));
         panel.add(userScrollPane, BorderLayout.EAST);
     }
     public static ChatServer getInstance() {
