@@ -1,5 +1,7 @@
 package ExChat;
 
+import ExChat.network.NetworkClient;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -15,8 +17,13 @@ public class ChatClient extends JFrame {
     private JTextField fieldInput;
     private JButton btnSend;
 
+    private NetworkClient client;
+
     public ChatClient(){
         createView();
+
+        client = new NetworkClient("127.0.10.1", 1080);
+        client.connectToServer();
 
         setTitle(TITLE);
         setSize(600,400);
