@@ -25,4 +25,4 @@ $nc <ip address of the server> 2000
 ```
 - You can now bid on the auction server.
 
-Under [MIT Licence](https://github.com/luk3Sky/CO225-Project-II-Auction_Server/LICENSE)
+Under [MIT Licence](https://github.com/luk3Sky/CO225-Project-II-Auction_Server/blob/master/LICENSE)
