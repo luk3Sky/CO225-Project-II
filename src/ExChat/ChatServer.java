@@ -47,7 +47,7 @@ public class ChatServer extends JFrame {
     }
 
     public void log(String msg){
-        console.
+        
     }
 
 
