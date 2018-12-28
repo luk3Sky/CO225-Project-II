@@ -1,3 +1,8 @@
+/*  CO225 Project II Auction Server
+ *   J.K.C.N.Jayasooriya - E/15/154
+ *   A.H.G.D.Jayalath    - E/15/142
+ */
+
 package com.foxploit;
 
 import java.io.*;
@@ -25,11 +30,7 @@ public class Client implements Runnable {
     private Socket mySocket; // connection socket per thread
     private int currentState;
     private Server server;
-    // TODO : use following if needed.
-    //private String securityName = null;
-    //private String securityPrice = null;
 
-    // TODO : use given username for each thread id
 
     public Client(Server mainServer) {
         this.mySocket = null; // we will set this later
@@ -69,7 +70,6 @@ public class Client implements Runnable {
                             this.symbolName = line;
                             out.write(AUTH_DONE_MSG);
                             out.flush();
-                            // TODO : Security name, etc
 //                            this.securityName =
                             outline = WAIT_BID_MSG;
                         } else {
@@ -86,7 +86,9 @@ public class Client implements Runnable {
                         }
                         this.bid = line;
                         server.changePrice(this.symbolName, this.bid);
-                        server.postMSG(this.username + " Bids: " + line + " on " + new Date().toString());
+                        server.updateHistory("Client: " + this.username + " | Bid: " + line + " | Time: " + new Date().toString() + " | Symbol: " + this.symbolName);
+                        server.updateCol(this.symbolName, this.bid);
+                        server.addAndDisplayHistory(this.username + " Bids: " + line + " on " + new Date().toString());
                         out.write(BID_POSTED);
                         out.flush();
                         outline = WAIT_BID_MSG;
