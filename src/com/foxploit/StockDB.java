@@ -1,3 +1,7 @@
+/*  CO225 Project II Auction Server
+ *   J.K.C.N.Jayasooriya - E/15/154
+ *   A.H.G.D.Jayalath    - E/15/142
+ */
 package com.foxploit;
 
 import java.io.BufferedReader;
@@ -8,16 +12,16 @@ import java.util.Map;
 
 public class StockDB {
 
-    private Map<String, String[]> stockList;
+    private static Map<String, String[]> stockList;
     private String[] fields;
 
-    public StockDB(String cvsFile, String key, String val1, String val2) {
+    public StockDB(String csvFile, String key, String val1, String val2) {
 
         FileReader fileRd;
         BufferedReader reader;
 
         try {
-            fileRd = new FileReader(cvsFile);
+            fileRd = new FileReader(csvFile);
             reader = new BufferedReader(fileRd);
 
             /* read the CSV file's first line which has
@@ -96,7 +100,12 @@ public class StockDB {
     // Change Security Price
     public void changeSecurityPrice(String key, String newValue) {
         stockList.get(key)[1] = newValue;
-        System.out.println(stockList.get(key)[1]);
+        System.out.println("changed one : "+stockList.get(key)[1]);
     }
 
+    public void printMap(){
+        for (String item : stockList.keySet()) {
+            System.out.println("key: " + item);
+        }
+    }
 }
